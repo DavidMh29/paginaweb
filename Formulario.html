@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title> Formulario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Formulario.css">
+        
+    </head>
+    <body>
+        <main>
+           <section class="form-register">
+            <h5><b>REGISTRO</b></h5>
+            <form action ="#" class="formulario" id="formulario" method="POST"> 
+            
+                <input class="controls" type="text" name="cedula"  placeholder="Numero de Cedula" maxlength="15" minlength="10" required>
+                <input class="controls" type="text" name="apellidos"  placeholder="Apellidos" maxlength="25" minlength="15" required>
+                <input class="controls" type="text" name="nombres"  placeholder="Nombres" maxlength="25" minlength="11" required>
+                <input class="controls" type="text" name="edad"  placeholder="Edad" maxlength="2" minlength="2" required>
+                <input class="controls" type="text" name="correo" placeholder="ejemplo@servidor.com" maxlength="30" minlength="11" required>
+                <input class="controls" type="password" name="contraseña" placeholder="Contraseña" maxlength="15" minlength="8" required>
+                <input class="controls" type="text" name="dirección" placeholder="Dirección" maxlength="30" minlength="25" required>
+                <input class="controls" type="text" name="teléfono"  placeholder="Teléfono" maxlength="10" minlength="10" required>
+
+            <!--Utilizamos tipo  Radio-->
+            <div class="sexo">
+                <input type="radio" name="sexo" id="hombre" value="hombre">
+                <label class="label-radio hombre" for="hombre">Hombre</label>
+
+                <input type="radio" name="sexo" id="mujer" value="mujer">
+                <label class="label-radio mujer" for="mujer">Mujer</label>
+            </div>
+             
+            <!--Botones de acción-->
+                <br> </br>
+                <input  type="submit" name="Buscar" value="Buscar" >
+                <input  type="submit" name="Eliminar" value="Eliminar" >
+                <input  type="submit" name="Grabar" value="Grabar">
+                <br></br>
+        
+             
+            <p>Estoy de Acuerdo con <a href="#">Terminos y Condiciones</a></p>
+                <input class="button" type="submit" value="Registrar">
+            <p><a href="Login 2.html"> ¿Ya tengo cuenta? </a>
+
+            <!--Llamado al Script de validación-->
+            <script src="formulario.js"></script>
+
+        </section>
+        </form>
+     </body>
+</html>
+
+
+        
+        
+
+        
+        
+        
+        
+  

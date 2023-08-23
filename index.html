@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<head>
+      <link rel="stylesheet" href="style.css">
+      <script src="scripts.js"></script>
+</head>
+<body>
+      <div class="page-nav">
+           <h1><img src="Imagenes para Logo/Logo.png"><img src="Imagenes para Logo/Letras.png"><img src="Imagenes para Logo/Logo.png"></h1>
+           
+           <!--Menu Desplegable-->   
+            <div id="header">
+              <nav> 
+                  <ul class="nav">
+                     <li><b><a href="#"> MENU </b></a>
+                        <ul>
+                           <li><a href="">Categorias</a>
+                            <ul>                                         
+                              <li><a href="Aceites.html">Aceites</a> </li> 
+                              <li><a href="Arroz.html">Arroz</a></li>
+                              <li><a href="Azucar.html">Azucar</a></li>
+                              <li><a href="Carnes.html">Carnes</a></li>
+                              <li><a href="Cereales.html">Cereales</a></li>
+                              <li><a href="Detergentes.html">Detergentes</a></li>
+                              <li><a href="Gaseosas.html">Gaseosas</a></li>
+                              <li><a href="Snacks.html">Snacks</a></li>
+                              <li><a href="Vegetales.html">Vegetales</a></li>
+                           </ul>
+                       </ul>
+                  </ul>    
+
+         <!--Acción para el botón pagar-->
+             <button id="checkout"class="button-checkout" onclick="pay()">Pagar</button>  
+        </div>
+      </div>     
+
+      <!--Inicio de Productos-->
+
+      <!--Aceites-->
+      <div class="page-content">
+        <div class="product-container"> 
+           <h3>Aceite Cocinero</h3>
+           <img src="Imagenes/Aceites/Cocinero.jpg">
+           <h3>$1.50</h3>
+           <button class="button-add" onclick="add('Cocinero', 1.50)">Añadir a carrito</button>
+        </div>
+
+        <div class="product-container"> 
+           <h3>Aceite La Favorita</h3>
+           <img src="Imagenes/Aceites/Favorita.png">
+           <h3>$1.30</h3>
+           <button class="button-add" onclick="add('Favorita', 1.30)">Añadir a carrito</button>
+        </div>
+        
+        <div class="product-container">
+           <h3>Aceite El Oro</h3>
+           <img src="Imagenes/Aceites/Oro.jpg">
+           <h3>$1.00</h3>
+           <button class="button-add"onclick="add('Aceite El Oro', 1.00)">Añadir a carrito</button>
+        </div>
+         
+        <!--Arroz-->
+
+        <div class="product-container"> 
+          <h3>Arroz El Sabor</h3>
+          <img src="Imagenes/Arroz/El Sabor.png">
+          <h3>$2.00</h3>
+          <button class="button-add"onclick="add('El Sabor', 2.00)">Añadir a carrito</button>
+        </div>
+
+        <div class="product-container"> 
+          <h3>Arroz Gustadina Integral</h3>
+          <img src="Imagenes/Arroz/Gustadina Integral.jpg">
+          <h3>$2.50</h3>
+          <button class="button-add"onclick="add('Gustadina Integral', 2.50)">Añadir a carrito</button>
+        </div>
+
+        <div class="product-container">
+         <h3>Arroz Gustadina</h3>
+         <img src="Imagenes/Arroz/Gustadina.png">
+         <h3>$2.50</h3>
+         <button class="button-add"onclick="add('Arroz Gustadina', 2.50)">Añadir a carrito</button>
+       </div>
+          
+        <div class="product-container">
+         <h3>Arroz Osito</h3>
+         <img src="Imagenes/Arroz/Osito.jpg">
+         <h3>$3.00</h3>
+         <button class="button-add"onclick="add('Arroz Osito', 3.00)">Añadir a carrito</button>
+        </div>
+         
+        <div class="product-container"> 
+         <h3>Arroz Real</h3>
+         <img src="Imagenes/Arroz/Real.png">
+         <h3>$1.80</h3>
+         <button class="button-add"onclick="add('Arroz Real', 1.80)">Añadir a carrito</button>
+        </div>
+
+       <!--Azucar-->
+
+        <div class="product-container"> 
+         <h3>Azucar Blanco</h3>
+         <img src="Imagenes/Azucar/Blanco.jpg">
+         <h3>$2.00</h3>
+         <button class="button-add"onclick="add('Azucar Blanco', 2.00)">Añadir a carrito</button>
+        </div>
+   
+        <div class="product-container"> 
+         <h3>Azucar Morena</h3>
+         <img src="Imagenes/Azucar/Morena.png">
+         <h3>$1.50</h3>
+         <button class="button-add"onclick="add('Morena', 1.50)">Añadir a carrito</button>
+        </div>
+
+        <div class="product-container"> 
+         <h3>Stevia</h3>
+         <img src="Imagenes/Azucar/Stevia.jpg">
+         <h3>$3.00</h3>
+         <button class="button-add"onclick="add('Stevia', 3.00)">Añadir a carrito</button>
+        </div>
+
+        <div class="product-container"> 
+         <h3>Azucar Valdez</h3>
+         <img src="Imagenes/Azucar/Valdez.png">
+         <h3>$2.00</h3>
+         <button class="button-add"onclick="add('Valdez', 2.00)">Añadir a carrito</button>
+      </div>
+
+       <!--Carnes--> 
+       
+        <div class="product-container"> 
+         <h3>Chuleta</h3>
+         <img src="Imagenes/Carnes/Chuleta.jpg">
+         <h3>$5.00</h3>
+         <button class="button-add"onclick="add('Chuleta', 5.00)">Añadir a carrito</button>
+        </div>
+
+        <div class="product-container">
+         <h3>Carne Roja</h3>
+         <img src="Imagenes/Carnes/Roja.jpg">
+         <h3>$2.30</h3>
+         <button class="button-add"onclick="add('Carne Roja', 2.30)">Añadir a carrito</button>
+        </div>
+
+        <div class="product-container"> 
+         <h3>Pollo</h3>
+         <img src="Imagenes/Carnes/Pollo.jpg">
+         <h3>$10.00</h3>
+         <button class="button-add"onclick="add('Pollo', 10.00)">Añadir a carrito</button>
+        </div>
+
+        <div class="product-container"> 
+         <h3>Pescado</h3>
+         <img src="Imagenes/Carnes/Pescado.png">
+         <h3>$7.00</h3>
+         <button class="button-add"onclick="add('Pescado', 7.00)">Añadir a carrito</button>
+        </div>
+      
+       <!--Cereales-->
+
+       <div class="product-container"> 
+        <h3>Chocapic</h3>
+        <img src="Imagenes/Cereales/Chocapic.jpg">
+        <h3>$1.30</h3>
+        <button class="button-add"onclick="add('Chocapic', 1.30)">Añadir a carrito</button>
+       </div>
+
+       <div class="product-container"> 
+        <h3>Corn Flakes</h3>
+        <img src="Imagenes/Cereales/Corn.jpg">
+        <h3>$2.50</h3>
+        <button class="button-add"onclick="add('Corn Flakes', 2.50)">Añadir a carrito</button>
+       </div>
+
+       <div class="product-container"> 
+        <h3>Froot Loops</h3>
+        <img src="Imagenes/Cereales/Froot.jpg">
+        <h3>$1.50</h3>
+        <button class="button-add"onclick="add('Froot Loops', 1.50)">Añadir a carrito</button>
+       </div>
+
+       <div class="product-container">
+        <h3>Cereal Nesquik</h3>
+        <img src="Imagenes/Cereales/Nesquik.png">
+        <h3>$1.90</h3>
+        <button class="button-add"onclick="add('Cereal Nesquik', 1.90)">Añadir a carrito</button>
+       </div>
+
+       <div class="product-container"> 
+        <h3>Trix</h3>
+        <img src="Imagenes/Cereales/Trix.jpg">
+        <h3>$1.50</h3>
+        <button class="button-add"onclick="add('Trix', 1.50)">Añadir a carrito</button>
+       </div>
+
+       <div class="product-container"> 
+        <h3>Zucaritas</h3>
+        <img src="Imagenes/Cereales/Zucaritas.jpg">
+        <h3>$2.00</h3>
+        <button class="button-add"onclick="add('Zucaritas', 2.00)">Añadir a carrito</button>
+       </div>
+
+       <!--Detergentes-->
+
+       <div class="product-container"> 
+        <h3>Detergente Ciclon</h3>
+        <img src="Imagenes/Detergentes/Ciclon.jpg">
+        <h3>$1.70</h3>
+        <button class="button-add"onclick="add('Ciclon', 1.70)">Añadir a carrito</button>
+       </div>
+
+       <div class="product-container"> 
+        <h3>Deja</h3>
+        <img src="Imagenes/Detergentes/Deja.png">
+        <h3>$1.00</h3>
+        <button class="button-add"onclick="add('Deja', 1.00)">Añadir a carrito</button>
+       </div>
+
+       <div class="product-container"> 
+        <h3>Detergente Omo</h3>
+        <img src="Imagenes/Detergentes/Omo.png">
+        <h3>$2.20</h3>
+        <button class="button-add"onclick="add('Detergente Omo', 2.20)">Añadir a carrito</button>
+       </div>
+     
+       <!--Gaseosas-->  
+
+        <div class="product-container"> 
+        <h3>Big Cola</h3>
+        <img src="Imagenes/Gaseosas/Big.jpg">
+        <h3>$1.80</h3>
+        <button class="button-add"onclick="add('Big Cola', 1.80)">Añadir a carrito</button>
+       </div>
+
+       <div class="product-container"> 
+        <h3>Coca Cola 2L</h3>
+        <img src="Imagenes/Gaseosas/Cola 2L.jpg">
+        <h3>$2.10</h3>
+        <button class="button-add"onclick="add('Coca Cola 2L', 2.10)">Añadir a carrito</button>
+      </div>
+
+       <div class="product-container"> 
+        <h3>Colas de Lata</h3>
+        <img src="Imagenes/Gaseosas/Lata.png">
+        <h3>$0.75</h3>
+        <button class="button-add"onclick="add('Colas de Lata', 0.75)">Añadir a carrito</button>
+       </div>
+
+       <div class="product-container"> 
+        <h3>Big Cola Limon </h3>
+        <img src="Imagenes/Gaseosas/Limon.jpg">
+        <h3>$1.80</h3>
+        <button class="button-add"onclick="add('Big Cola Limon', 1.80)">Añadir a carrito</button>
+       </div>
+
+       <div class="product-container"> 
+        <h3>Big Cola Naranja</h3>
+        <img src="Imagenes/Gaseosas/Naranja.jpg">
+        <h3>$1.80</h3>
+        <button class="button-add"onclick="add('Big Cola Naranja', 1.80)">Añadir a carrito</button>
+       </div>
+
+       <div class="product-container"> 
+        <h3>Cola Oro</h3>
+        <img src="Imagenes/Gaseosas/Oro.jpg">
+        <h3>$0.30</h3>
+        <button class="button-add"onclick="add('Cola Oro', 0.30)">Añadir a carrito</button>
+       </div>
+
+        <div class="product-container"> 
+        <h3>Colas Pequeñas</h3>
+        <img src="Imagenes/Gaseosas/Pequeñas.png">
+        <h3>$0.30</h3>
+        <button class="button-add"onclick="add('Colas Pequeñas', 0.30)">Añadir a carrito</button>
+       </div>
+     
+       <!--Snacks-->  
+     
+       <div class="product-container"> 
+        <h3>Doritos</h3>
+        <img src="Imagenes/Snacks/Doritos.jpg">
+        <h3>$1.30</h3>
+        <button class="button-add"onclick="add('Doritos', 1.30)">Añadir a carrito</button>
+       </div>
+
+       <div class="product-container"> 
+        <h3>Snack Golpe</h3>
+        <img src="Imagenes/Snacks/Golpe.jpg">
+        <h3>$1.30</h3>
+        <button class="button-add"onclick="add('Golpe', 1.30)">Añadir a carrito</button>
+       </div>
+
+       <div class="product-container"> 
+        <h3>Cheese tris</h3>
+        <img src="Imagenes/Snacks/Queso.jpg">
+        <h3>$0.40</h3>
+        <button class="button-add"onclick="add('Cheese tris', 0.40)">Añadir a carrito</button>
+       </div>
+
+       <div class="product-container"> 
+        <h3>Ruffles Picantes</h3>
+        <img src="Imagenes/Snacks/Ruffles.png">
+        <h3>$0.40</h3>
+        <button class="button-add"onclick="add('Ruffles Picantes', 0.40)">Añadir a carrito</button>
+       </div>
+
+       <div class="product-container"> 
+        <h3>Saritas de Cebolla</h3>
+        <img src="Imagenes/Snacks/Saritas.jpg">
+        <h3>$0.35</h3>
+        <button class="button-add"onclick="add('Saritas de Cebolla, 0.35)"> Añadir a carrito</button>
+       </div>
+
+       <div class="product-container"> 
+        <h3>Takitos</h3>
+        <img src="Imagenes/Snacks/Takitos.jpg">
+        <h3>$1.00</h3>
+        <button class="button-add"onclick="add('Takitos', 1.00)">Añadir a carrito</button>
+       </div>
+
+       <div class="product-container">
+        <h3>De Todito</h3>
+        <img src="Imagenes/Snacks/Todito.jpg">
+        <h3>$1.30</h3>
+        <button class="button-add"onclick="add('De Todito', 1.30)">Añadir a carrito</button>
+       </div>
+
+       <div class="product-container"> 
+        <h3>Torti Jacks</h3>
+        <img src="Imagenes/Snacks/Torti.png">
+        <h3>$0.30</h3>
+        <button class="button-add"onclick="add('Torti Jacks', 0.30)">Añadir a carrito</button>
+       </div>
+
+       <!--Vegetales-->
+       
+       <div class="product-container"> 
+        <h3>Brocoli</h3>
+        <img src="Imagenes/Vegetales/Brocoli.jpg">
+        <h3>$3.00</h3>
+        <button class="button-add"onclick="add('Brocoli', 3.00)">Añadir a carrito</button>
+       </div>
+
+       <div class="product-container"> 
+        <h3>Tomates</h3>
+        <img src="Imagenes/Vegetales/Tomates.jpg">
+        <h3>$0.50</h3>
+        <button class="button-add"onclick="add('Tomates', 0.50)">Añadir a carrito</button>
+       </div>
+
+       <div class="product-container"> 
+        <h3>Zanahorias</h3>
+        <img src="Imagenes/Vegetales/Zanahorias.jpg">
+        <h3>$3.00</h3>
+        <button class="button-add"onclick="add('Zanahorias', 3.00)">Añadir a carrito</button>
+       </div>
+</div>
+
+<!--Pie de pagina-->
+
+<footer><br><b>© 2021 Alan Escobar </b></br></footer>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+      <link rel="stylesheet" href="style.css">
+      <script src="scripts.js"></script>
+</head>
+<body>
+      <div class="page-nav">
+           <h1>CARNES</h1>
+           <!--Menu Desplegable-->   
+            <div id="header">
+               <nav> 
+                  <ul class="nav">
+                     <li><b><a href="index.html"> MENU </b></a>
+                        <ul>
+                           <li><a href="">Categorias</a>
+                            <ul>                                         
+                              <li><a href="Aceites.html">Aceites</a> </li> 
+                              <li><a href="Arroz.html">Arroz</a></li>
+                              <li><a href="Azucar.html">Azucar</a></li>
+                              <li><a href="">Carnes</a></li>
+                              <li><a href="Cereales.html">Cereales</a></li>
+                              <li><a href="Detergentes.html">Detergentes</a></li>
+                              <li><a href="Gaseosas.html">Gaseosas</a></li>
+                              <li><a href="Snacks.html">Snacks</a></li>
+                              <li><a href="Vegetales.html">Vegetales</a></li>
+                           </ul>
+                       </ul>
+                  </ul>    
+        <button id="checkout"class="button-checkout" onclick="pay()">Pagar</button>  
+        </div>
+     </div>      
+           <div class="page-content">
+            <div class="product-container"> 
+                <h3>Chuleta</h3>
+                <img src="Imagenes/Carnes/Chuleta.jpg">
+                <h3>$5.00</h3>
+                <button class="button-add"onclick="add('Chuleta', 5.00)">Añadir a carrito</button>
+            </div>
+    
+            <div class="product-container"> 
+                <h3>Carne Roja</h3>
+                <img src="Imagenes/Carnes/Roja.jpg">
+                <h3>$2.30</h3>
+                <button class="button-add"onclick="add('Carne Roja', 2.30)">Añadir a carrito</button>
+            </div>
+            
+            <div class="product-container">
+                <h3>Pollo</h3>
+                <img src="Imagenes/Carnes/Pollo.jpg">
+                <h3>$10.00</h3>
+                <button class="button-add"onclick="add('Pollo', 10.00)">Añadir a carrito</button>
+            </div>
+            
+            <div class="product-container">
+                <h3>Pescado</h3>
+                <img src="Imagenes/Carnes/Pescado.png">
+                <h3>$7.00</h3>
+                <button class="button-add"onclick="add('Pescado', 7.00)">Añadir a carrito</button>
+            </div>
+
+        </div>
+    <footer><br><b>© 2021 Alan Escobar </b></br></footer>   
+ </body>
+</hmtl>

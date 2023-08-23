@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title> Login Pagina Web </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Estilo de Pag.css"
+    </head>
+    <body>
+
+        <!--Script para la validación-->
+        <section class='form-login'>
+            <h5><b>BIENVENIDO</b></h5>
+            <script>
+                function usrpas(){
+                if (document.form1.correo.value=="alanescobar.p@gmail.com" && document.form1.contraseña.value=="A2912e"){window.location="index.html"}
+                else {alert("Error en Usuario o Contraseña. Intenta de nuevo.")}
+                }
+                document.oncontextmenu=new Function("return false");
+            </script>
+
+        <!--Formulario de usuario-->
+            <form name="form1">
+                    <input class=controls type="email" name="correo" value="" placeholder="usuario@correo.com" maxlength="30" required >
+                    <input class= controls type="password" name="contraseña" value="" placeholder="Contraseña" maxlength="10" required >
+                    <input class= buttons type="button" value="Ingresar" onclick="usrpas()">
+            
+       <!--Enlaces a otras pestañas-->
+                    
+                    <p><a href="Olvidaste tu Contraseña.html"> ¿Olvidaste tu contraseña? </a></p>
+                    <p><a href="Formulario.html"> ¿Crear Cuenta? </a></p>
+                    
+            </form>    
+        </section>
+    </body>
+</html>
